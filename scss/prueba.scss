@@ -1,0 +1,206 @@
+$rosa: rgb(187, 107, 107);
+$verde: rgb(85, 138, 138);
+$fondo:  floralwhite;
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: linen;
+    color:lightslategray;
+    text-align: center;
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        color: white;
+        background-color: $rosa;
+        height: 100px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        h1{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            background-color: $verde;
+            width: 70%;
+            display: flex;
+            a{
+                text-decoration: none;
+                color: floralwhite;
+                flex-grow: 1;
+                padding: 10px;
+                margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            a:hover{
+                text-decoration: none;
+                color:  $rosa;
+                background-color: floralwhite;
+                flex-grow: 1;
+                padding: 10px;
+                margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 0;  
+        width: 100%;
+        height: 50px;
+        background-color: $verde;
+        align-items: center;
+        p{
+                font-size: 12px;
+                text-align: center;
+                color: floralwhite;
+                padding: 10px;
+            }
+            
+
+        
+        
+    }
+    data{
+        vertical-align: middle;
+    }
+    .contenedor{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        margin: auto;
+    }
+    .titulos {
+        color: $verde;
+        padding: 10px;
+    }
+    .parrafos{
+        color: black;
+    }
+    section {
+        article {
+            background-color: #f3eded;
+            width: 350px;
+            height: 200px;
+            padding: 30px;
+            display: inline-block;
+            position:relative;
+            margin: 25px;
+        }
+    }
+    table {
+        margin: 20px;
+        width: 80%;
+        text-align: center;
+        tr{ 
+            th {
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+    
+    
+    .galeria {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 612px ;
+        background-image: url("../img/cl.JPG");
+        animation-name: galeriafotos;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        animation-delay: 2s;
+        animation-timing-function: ease;
+    }
+    @keyframes galeriafotos{
+        0% { background-image: url("../img/cl.JPG");}
+        25% { background-image: url("../img/02.JPG");}
+        50% { background-image: url("../img/03.JPG");}
+        75% { background-image: url("../img/04.JPG");}
+    }
+    .nombres{
+        margin: auto;
+    }
+    .card{
+        margin: auto;
+    }
+    .biblioteca {
+        width: 400px;
+    }
+    .h5__titulodatos{
+        color: $rosa;
+    }
+    .pinkBackgound{
+        background-color: $rosa;
+    }
+    .pinkBackgound:hover{
+        background-color: $verde;
+    }
+    .itemCenter{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+.grid {
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:"px pe pe pe pe py"
+                        "servicio1 servicio1 servicio2 servicio2 servicio3 servicio3"
+                        "servicio4 servicio4 servicio5 servicio5 servicio6 servicio6";
+}
+p#py{
+    grid-area:py;
+}
+p#px{
+    grid-area:px;
+}
+p#pe{
+    grid-area:pe;
+    color: $rosa;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3#servicio1 {
+    padding: 20px;
+    grid-area: servicio1;
+}
+h3#servicio2 {
+    padding: 20px;
+    grid-area: servicio2;
+}
+h3#servicio3 {
+    padding: 20px;
+    grid-area: servicio3;
+}
+h3#servicio4 {
+    padding: 20px;
+    grid-area: servicio4;
+}
+h3#servicio5 {
+    padding: 20px;
+    grid-area: servicio5;
+}
+h3#servicio6 {
+    padding: 20px;
+    grid-area: servicio6;
+}
+.carouselLocation{
+    position: center;
+}
+.container{
+    margin-top: 10%;
+}
+.card-body{
+    color: $rosa;
+    border-width: 5px;
+    border-color:$verde;
+    background-color: $fondo;
+}
