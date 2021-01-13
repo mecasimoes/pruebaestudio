@@ -3,7 +3,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: linen;
   color: lightslategray;
-  text-align: center; }
+  text-align: center;
+  flex-wrap: wrap; }
   body header {
     display: flex;
     flex-flow: row nowrap;
@@ -38,14 +39,16 @@ body {
         margin: auto;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center; }
-  body footer {
-    position: absolute;
-    bottom: 0;
+  body .footer {
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
     width: 100%;
     height: 50px;
     background-color: #558a8a;
-    align-items: center; }
-    body footer p {
+    align-items: center;
+    align-self: flex-end; }
+    body .footer p {
       font-size: 12px;
       text-align: center;
       color: floralwhite;
@@ -59,7 +62,8 @@ body {
     margin: auto; }
   body .titulos {
     color: #558a8a;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 23px; }
   body .parrafos {
     color: black; }
   body section article {
@@ -120,9 +124,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "px pe pe pe pe py"
- "servicio1 servicio1 servicio2 servicio2 servicio3 servicio3"
- "servicio4 servicio4 servicio5 servicio5 servicio6 servicio6"; }
+  grid-template-areas: "px pe pe pe pe py" "servicio1 servicio1 servicio2 servicio2 servicio3 servicio3" "servicio4 servicio4 servicio5 servicio5 servicio6 servicio6"; }
 
 p#py {
   grid-area: py; }
