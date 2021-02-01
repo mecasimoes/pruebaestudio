@@ -15,12 +15,19 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: auto; }
-    body header h1 {
+    body header h2 a {
       margin: 20px;
-      font-family: Arial, Helvetica, sans-serif; }
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      color: floralwhite; }
+      body header h2 a a:hover {
+        text-decoration: none;
+        color: #bb6b6b; }
+    body header .div.header.h2.a:hover {
+      color: #558a8a; }
     body header nav {
       background-color: #558a8a;
-      width: 70%;
+      width: 75%;
       display: flex; }
       body header nav a {
         text-decoration: none;
@@ -39,20 +46,27 @@ body {
         margin: auto;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center; }
-  body .footer {
-    position: fixed;
-    bottom: 0pt;
-    left: 0pt;
-    width: 100%;
-    height: 50px;
+  body .presentacion {
+    margin-top: 40px;
+    margin-bottom: 100px; }
+  body #footer {
     background-color: #558a8a;
-    align-items: center;
-    align-self: flex-end; }
-    body .footer p {
-      font-size: 12px;
-      text-align: center;
-      color: floralwhite;
-      padding: 10px; }
+    margin-top: 130px;
+    color: floralwhite;
+    padding: 15px 0 15px 0;
+    font-size: 16px;
+    margin-bottom: 0px; }
+  body #footer ul {
+    margin: 0;
+    padding: 0; }
+  body #footer ul li {
+    list-style: none; }
+  body #footer ul li a,
+  body #footer ul li a:visited {
+    color: #EEEEEE;
+    text-decoration: none; }
+  body #footer.row.name {
+    margin: auto; }
   body data {
     vertical-align: middle; }
   body .contenedor {
@@ -105,9 +119,9 @@ body {
   body .nombres {
     margin: auto; }
   body .card {
-    margin: auto; }
-  body .biblioteca {
-    width: 400px; }
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto; }
   body .h5__titulodatos {
     color: #bb6b6b; }
   body .pinkBackgound {
@@ -119,6 +133,7 @@ body {
     margin-left: 10%; }
 
 .grid {
+  margin-top: 130px;
   text-align: center;
   padding: 30px;
   display: grid;
@@ -173,3 +188,16 @@ h3#servicio6 {
   border-width: 5px;
   border-color: #558a8a;
   background-color: floralwhite; }
+
+.biblioteca {
+  width: 550px;
+  margin: 30px; }
+
+.carousel.slide.inicio {
+  margin-top: 100px; }
+
+.formulario.container {
+  margin-top: 140px; }
+
+.row.margen {
+  margin-top: 120px; }
